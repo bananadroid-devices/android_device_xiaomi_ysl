@@ -12,7 +12,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 # Inherit some common BananaDroid stuff.
 $(call inherit-product, vendor/banana/config/common.mk)
 BANANA_BUILD_TYPE := OFFICIAL
-BANANA_MAINTAINER := ROBIN @ItsMeAlcazar007
+BANANA_MAINTAINER := ROBIN
 
 # Inherit some common AOSP flags
 TARGET_BOOT_ANIMATION_RES := 720
