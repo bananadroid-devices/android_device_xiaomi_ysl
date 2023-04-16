@@ -9,10 +9,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
-# Inherit some common BananaDroid stuff.
-$(call inherit-product, vendor/banana/config/common.mk)
-BANANA_BUILD_TYPE := OFFICIAL
-BANANA_MAINTAINER := ROBIN
+# Inherit some common AOSP stuff.
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Inherit some common AOSP flags
 TARGET_BOOT_ANIMATION_RES := 720
@@ -21,8 +19,6 @@ TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 TARGET_INCLUDE_LIVE_WALLPAPERS := true
-WITH_GAPPS := true
-BUILD_CORE_GAPPS := true
 
 # Inherit from ysl device
 $(call inherit-product, device/xiaomi/ysl/device.mk)
