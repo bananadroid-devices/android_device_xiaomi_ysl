@@ -9,8 +9,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
-# Inherit some common AOSP stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common BananaDroid stuff.
+$(call inherit-product, vendor/aosp/config/common.mk)
 
 # Inherit some common AOSP flags
 TARGET_BOOT_ANIMATION_RES := 720
@@ -25,7 +25,7 @@ $(call inherit-product, device/xiaomi/ysl/device.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := ysl
-PRODUCT_NAME := aosp_ysl
+PRODUCT_NAME := banana_ysl
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi S2
