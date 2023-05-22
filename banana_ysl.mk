@@ -12,24 +12,37 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 # Inherit some common BananaDroid stuff.
 $(call inherit-product, vendor/banana/config/common.mk)
 
-# Inherit some Banana build stuff. 
- TARGET_BOOT_ANIMATION_RES := 1080 
- BANANA_MAINTAINER := OnFire-Nasir 
-  
- # Inherit Gapps stuff 
- WITH_GAPPS=true 
- BUILD_CORE_GAPPS := true 
-  
- # Inherit some AOSP stuffs 
- TARGET_INCLUDE_STOCK_ARCORE := true 
- TARGET_INCLUDE_LIVE_WALLPAPERS := true 
- TARGET_EXCLUDE_MATLOG := true 
- TARGER_SUPPORTS_NEXT_GEN_ASSISTANT := true
- TARGET_FACE_UNLOCK_SUPPORTED := true 
- TARGET_SUPPORTS_GOOGLE_RECORDER := true 
- TARGET_SUPPORTS_QUICK_TAP := true 
- TARGET_USES_BLUR := true
+#
+# Copyright (C) 2017-2021 The LineageOS Project
+#
+# SPDX-License-Identifier: Apache-2.0
+#
 
+# Inherit from those products. Most specific first.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
+
+# Inherit some common BananaDroid stuff.
+$(call inherit-product, vendor/banana/config/common.mk)
+
+# Inherit some Banana build stuff.
+TARGET_BOOT_ANIMATION_RES := 1080
+BANANA_MAINTAINER := OnFire-Nasir
+
+# Inherit Gapps stuff
+WITH_GAPPS := true
+BUILD_CORE_GAPPS := true
+
+# Inherit some AOSP stuffs
+TARGET_INCLUDE_STOCK_ARCORE := true
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
+TARGET_EXCLUDE_MATLOG := true
+TARGER_SUPPORTS_NEXT_GEN_ASSISTANT := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_USES_BLUR := true
 # Inherit from ysl device
 $(call inherit-product, device/xiaomi/ysl/device.mk)
 
