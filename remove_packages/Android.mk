@@ -21,8 +21,11 @@ LOCAL_OVERRIDES_PACKAGES := \
     MaestroPrebuilt \
     Maps \
     Photos \
+<<<<<<< HEAD
     PixelLiveWallpaperPrebuilt \
     PixelWallpapers2022 \
+=======
+>>>>>>> 438daab (ysl: cleanup: nuke all unwanted gapps)
     PlayAutoInstallConfig \
     PrebuiltGmail \
     RecorderPrebuilt \
@@ -30,10 +33,15 @@ LOCAL_OVERRIDES_PACKAGES := \
     ScribePrebuilt \
     Showcase \
     SoundAmplifierPrebuilt \
+<<<<<<< HEAD
     GoogleCameraGo \
     SprintHM \
     talkback \
     Tycho \
+=======
+    SprintHM \
+    talkback \
+>>>>>>> 438daab (ysl: cleanup: nuke all unwanted gapps)
     VZWAPNLib \
     VzwOmaTrigger \
     WfcActivation
