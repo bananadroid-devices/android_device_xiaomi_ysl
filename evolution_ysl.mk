@@ -14,7 +14,7 @@ $(call inherit-product, vendor/banana/config/common.mk)
 
 # Inherit some Banana build stuff.
 TARGET_BOOT_ANIMATION_RES := 1080
-BANANA_MAINTAINER := OnFire-Nasir
+EVOLUTION_MAINTAINER := aaravmujawdia
 
 # Inherit Gapps stuff
 WITH_GAPPS := true
