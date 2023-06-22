@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/banana_ysl.mk
+    $(LOCAL_DIR)/aosp_ysl.mk
 
 COMMON_LUNCH_CHOICES := \
-    banana_ysl-user \
-    banana_ysl-userdebug \
-    banana_ysl-eng
+    aosp-user \
+    aosp-userdebug \
+    aosp-eng
