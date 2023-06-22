@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_ysl.mk
+    $(LOCAL_DIR)/evolution_ysl.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp-user \
-    aosp-userdebug \
-    aosp-eng
+    evolution_ysl-user \
+    evolution_ysl-userdebug \
+    evolution_ysl-eng
