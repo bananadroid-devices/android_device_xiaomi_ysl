@@ -14,7 +14,7 @@ $(call inherit-product, vendor/banana/config/common.mk)
 
 # Inherit some Banana build stuff.
 TARGET_BOOT_ANIMATION_RES := 1080
-EVOLUTION_MAINTAINER := aaravmujawdia
+EVOLUTION_MAINTAINER := krishnaspeace
 
 # Inherit Gapps stuff
 WITH_GAPPS := true
@@ -34,7 +34,7 @@ $(call inherit-product, device/xiaomi/ysl/device.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := ysl
-PRODUCT_NAME := banana_ysl
+PRODUCT_NAME := evolution_ysl
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi S2
