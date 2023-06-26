@@ -10,7 +10,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
 # Inherit some common BananaDroid stuff.
-$(call inherit-product, vendor/banana/config/common.mk)
+$(call inherit-product, vendor/evolution/config/common.mk)
 
 # Inherit some Banana build stuff.
 TARGET_BOOT_ANIMATION_RES := 1080
